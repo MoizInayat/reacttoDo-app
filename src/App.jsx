@@ -18,7 +18,7 @@ function App() {
     setTodos(newTodoList);
   }
 
-  //handle edit
+  // function to handle edit
 
   function handleEditTodo(index, newValue) {
     const newTodoList = todos.map((todo, todoIndex) => {
