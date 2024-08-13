@@ -19,7 +19,6 @@ function App() {
   }
 
   // function to handle edit
-
   function handleEditTodo(index, newValue) {
     const newTodoList = todos.map((todo, todoIndex) => {
       if (todoIndex === index) {
@@ -29,7 +28,7 @@ function App() {
     });
     setTodos(newTodoList);
   }
-
+  
   return (
     <>
       <TodoInput handleAddTodos={handleAddTodos} />
@@ -40,6 +39,7 @@ function App() {
       />
     </>
   );
+ 
 }
 
 export default App;
